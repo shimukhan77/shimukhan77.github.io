@@ -3,53 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shimu Khan - Personal Website</title>
+  <title>Shimu Khan - Portfolio</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f9; color: #333; }
-    header { background: #222; color: #fff; text-align: center; padding: 2rem 1rem; }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { margin: .5rem 0 0; font-size: 1.2rem; }
-    main { max-width: 900px; margin: auto; padding: 2rem; }
-    section { margin-bottom: 2rem; }
-    h2 { color: #444; border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
-    ul { list-style: none; padding: 0; }
-    ul li { padding: .3rem 0; }
-    footer { background: #222; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(135deg, #0078d7, #00c6ff);
+      color: white;
+      padding: 30px 0;
+    }
+    header h1 {
+      margin: 10px 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.2rem;
+    }
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 15px;
+      border: 4px solid #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    section {
+      margin: 30px auto;
+      max-width: 800px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .about h2 { color: #0078d7; }
+    .cricket h2 { color: #e67e22; }
+    .experience h2 { color: #9b59b6; }
+    .social-links h2 { color: #27ae60; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 8px 0;
+      font-size: 1rem;
+    }
+
+    .social-links a {
+      margin: 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: inline-block;
+      color: #555;
+      transition: 0.3s;
+    }
+    .social-links a:hover {
+      color: #0078d7;
+      transform: scale(1.1);
+    }
+    .social-links i {
+      margin-right: 8px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="profile.jpg" alt="Profile Photo" class="profile">
     <h1>Shimu Khan</h1>
-    <p>Student | Cricketer | Traveler</p>
+    <p>Student & Traveler</p>
   </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>Hello! My name is Shimu Khan. I am currently a student at Sylhet Government College. I went to The Hope International School And College. 
-      I love traveling and my dream is to explore the world.</p>
-    </section>
 
-    <section>
-      <h2>Cricket Career</h2>
-      <ul>
-        <li>Played for Habiganj Tigers Cricket Academy</li>
-        <li>Former U-16 Cricketer | Habiganj District (2022–23)</li>
-        <li>Former 2nd Division Cricket Player, Habiganj</li>
-        <li>I love playing cricket</li>
-      </ul>
-    </section>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hey! This is Shimu Khan. I am currently a student at Sylhet Government College. 
+       I went to The Hope International School And College. 
+       I enjoy traveling and my dream is to explore the world.</p>
+  </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:muhiburshimu19@gmail.com">muhiburshimu19@gmail.com</a></p>
-      <p>Facebook: <a href="https://facebook.com/shimukhan19" target="_blank">facebook.com/shimukhan19</a></p>
-      <p>Instagram: <a href="https://instagram.com/shimu.khan19" target="_blank">@shimu.khan19</a></p>
-    </section>
-  </main>
+  <section class="cricket">
+    <h2>Former Cricketer</h2>
+    <ul>
+      <li>Played for Habiganj Tigers Cricket Academy</li>
+      <li>Former U-16 Cricketer | Habiganj District (2022–23)</li>
+      <li>Played 2nd Division Cricket, Habiganj</li>
+      <li>I love playing cricket</li>
+    </ul>
+  </section>
+
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><b>Computer Skills:</b> MS Word, MS Excel, MS Access, MS PowerPoint (Advanced)</li>
+      <li>Certified in Computer Applications (Govt. Approved)</li>
+    </ul>
+  </section>
+
+  <section class="social-links">
+    <h2>Connect with Me</h2>
+    <a href="mailto:shimu.khan19@gmail.com"><i class="fas fa-envelope"></i> Gmail</a>
+    <a href="https://instagram.com/shimu.khan19" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://threads.net/shimu.khan19" target="_blank"><i class="fa-brands fa-threads"></i> Threads</a>
+    <a href="https://github.com/shimukhan19" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+  </section>
+
   <footer>
     <p>© 2025 Shimu Khan. All Rights Reserved.</p>
   </footer>
+
 </body>
-</html>
+  </html>
