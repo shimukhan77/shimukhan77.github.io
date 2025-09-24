@@ -144,8 +144,9 @@
       <!-- profile.jpg রাখবেন same folder-এ -->
       <img src="profile.jpg" alt="Profile Photo" class="profile">
       <div>
+    
         <h1>Shimu Khan</h1>
-        <p>Student &amp; Traveler</p>
+        <p id="typing"></p>
       </div>
     </div>
   </header>
@@ -211,6 +212,19 @@
   <footer>
     <p>© 2025 Shimu Khan. All Rights Reserved.</p>
   </footer>
+<script>
+  const text = "Student & Traveler";  // যে লিখা আসবে
+  let i = 0;
 
+  function typingEffect() {
+    if (i < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typingEffect, 150); // স্পিড (150ms)
+    }
+  }
+
+  typingEffect();
+</script>
 </body>
 </html>
